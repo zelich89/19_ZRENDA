@@ -24,12 +24,25 @@
     color: $nav;
 
     &--flex {
+      height: 110px;
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       align-items: center;
     }
     &--quadro {
       width: 20%;
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    @include font(normal, 14px, 1);
+    text-decoration: underline;
+    &--indent {
+      padding-left: 15px;
     }
   }
   &--bg {
