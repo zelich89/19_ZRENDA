@@ -1,0 +1,38 @@
+.zrenda-radiobox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  &__radioed {
+    @include square-size(30px);
+    border: 2px solid $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    &:after {
+      content: "";
+      background: $black;
+      @include square-size(67%);
+      transform: scale(0);
+      transition: all $transition-time ease;
+    }
+  }
+  &__input:checked ~ .zrenda-radiobox__radioed {
+    &:after {
+      transform: scale(1);
+    }
+  }
+  &__text {
+    @include font(normal, 16px, 1);
+    &--margin-left {
+      margin-left: 20px;
+    }
+  }
+  &--indent {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

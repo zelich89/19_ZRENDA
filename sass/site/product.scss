@@ -1,0 +1,97 @@
+.product {
+  &__warp {
+    @extend .warps;
+    position: relative;
+  }
+  &__bar {
+    &--size {
+      @include font(normal, 12px, 1);
+    }
+    &--indent {
+      padding-top: 45px;
+    }
+  }
+  &__span {
+    cursor: pointer;
+    color: $primary;
+    &--avtive {
+      color: $secondary;
+    }
+  }
+  &__section {
+    display: flex;
+    &--indent {
+      padding-top: 65px;
+    }
+  }
+  &__content {
+    width: 100%;
+    &--indent {
+      padding-left: 30px;
+    }
+  }
+  &__title {
+    @include font(bold, 20px, 1);
+    &--indent {
+      margin-bottom: 35px;
+    }
+  }
+  &__part {
+    position: relative;
+    border: 1px solid red;
+    padding: 5px 20px;
+    @include font(bold, 24px, 1);
+    border-radius: 3px;
+    border-color: rgba($black, .2);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .35);
+    &--indent {
+      margin-bottom: 20px;
+    }
+    &--active {
+      box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 1);
+
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    .svg {
+      @include square-size(20px);
+    }
+  }
+  &__radiobox {
+    &--indent {
+      margin: 32px 0
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    &--indent {
+      margin-bottom: 42px;
+    }
+  }
+  &__price {
+    @include font(bold, 24px, 1);
+  }
+  &__btn {
+    padding: 5px 30px;
+    background-color: $primary;
+    border: 1px solid $tertiary;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .35);
+    text-transform: uppercase;
+    text-decoration: underline;
+    &--indent {
+      margin-left: 50px;
+    }
+  }
+  &__line {
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: rgba($black, .5);
+  }
+}

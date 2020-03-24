@@ -1,0 +1,12 @@
+.maket {
+  position: absolute;
+  display: none;
+  &__pos {
+    @if $maket-visible == 1 {
+      display: block;
+    }
+    opacity: .3;
+    z-index: 11;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,44 @@
+.note {
+  &__warp {
+    @extend .warps;
+  }
+  &__title {
+    @include font(bold, 24px, 1);
+    &--indent {
+      padding-bottom: 30px;
+    }
+  }
+  &__list {
+    @include font(bold, 24px, 1);
+    &--indent {
+      padding-left: 25px;
+      padding-bottom: 5px;
+    }
+  }
+  &__item {
+    &--indent {
+      padding-bottom: 26px;
+    }
+  }
+  &__icon {
+    .svg {
+      @include square-size(20px);
+      }
+    &--indent {
+      margin-left: 40px;
+    }
+  }
+  &__input-form {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    width: 57%;
+    @include font(normal, 30px, 1);
+    border-radius: 4px;
+  }
+  &--indent {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+}

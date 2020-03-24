@@ -1,0 +1,50 @@
+.service {
+
+  &__warp {
+    @extend .warps;
+  }
+  &__title {
+    text-align: center;
+    @include font(bold, 24px, 1);
+    text-transform: uppercase;
+    &--bg {
+      background-color: $white;
+    }
+    &--indent {
+      padding-top: 45px;
+      padding-bottom: 18px;
+    }
+  }
+  &--block {
+    height: 500px;
+    &--bg {
+      background-color: $primary;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 50%;
+    display: flex;
+    &--indent {
+      padding-top: 48px;
+      padding-bottom: 23px;
+    }
+  }
+  &__content {
+
+    &--indent {
+      padding-left: 50px;
+    }
+  }
+  &__name {
+    @include font(bold, 20px, 1);
+    text-transform: uppercase;
+    &--indent {
+      padding-top: 8px;
+      padding-bottom: 22px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.top-nav {
+  position: relative;
+  &__warp {
+    @extend .warps;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__links {
+    display: flex;
+    &--indent {
+      padding-left: 70px;
+    }
+  }
+  &__item {
+    list-style-type: none;
+    margin: 20px;
+    @include font(normal, 14px, 1);
+    color: $secondary;
+    text-decoration: none;
+  }
+  &--height {
+    height: 50px;
+  }
+}

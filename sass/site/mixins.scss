@@ -1,0 +1,26 @@
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin font ($font-weight, $font-size, $line-height) {
+  font: $font-weight #{$font-size}/#{$line-height} 'PT Sans', sans-serif;
+}
+
+@mixin square-size ($ss) {
+  width: $ss;
+  height: $ss;
+}

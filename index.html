@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+Pj3AQEBDvEBAQ7xAQEO8QEBDvEBAQ7ykpKdYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIB/AAAA/wAAAP8AAAD/AAAA/wAAAP8aGhrlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAr6+vUAAAAP8AAAD/AAAA/xYWFukAAADPGhoazwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP/m5uYZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVlZWqQAAAP8AAAD/dnZ2iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAObm5hkAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1NTbIAAAD/AAAA/wAAAH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/PMM/PzzCDg4N8AAAA/wAAAP8aGhrlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/Ghoa5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/xoaGuUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPgfAAD4HwAA+B8AAPj/AAD4fwAA/H8AAPx/AAD8fwAA/j8AAP4/AAD/HwAA+B8AAPgfAAD//wAA//8AAA=="
+          rel="icon" type="image/x-icon"/>
+    <title>ZRENDA</title>
+    <svg style="display: none;">
+        <symbol viewBox="0 0 330 330" id="icon-up">
+            <g transform="translate(330, 330) rotate(180)">
+                <path d="M315,0H15C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V15	C330,6.716,323.284,0,315,0z M255.606,135.606l-79.998,80c-2.813,2.813-6.628,4.394-10.606,4.394c-3.979,0-7.793-1.58-10.607-4.394	l-80.002-80c-5.858-5.857-5.858-15.355,0-21.213c5.857-5.858,15.355-5.858,21.213,0l69.396,69.393l69.392-69.393	c5.857-5.858,15.355-5.858,21.213,0C261.465,120.251,261.465,129.749,255.606,135.606z"
+                      fill="currentColor"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 330 330" id="icon-right">
+            <g>
+                <path d="M315,0H15C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V15	C330,6.716,323.284,0,315,0z M215.606,175.605l-80,80.002C132.678,258.535,128.839,260,125,260c-3.839,0-7.678-1.464-10.606-4.394	c-5.858-5.857-5.858-15.355,0-21.213l69.394-69.396l-69.394-69.392c-5.858-5.857-5.858-15.355,0-21.213	c5.857-5.858,15.355-5.858,21.213,0l80,79.998c2.813,2.813,4.394,6.628,4.394,10.606C220,168.976,218.42,172.792,215.606,175.605z"
+                      fill="currentColor"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 330 330" id="icon-down">
+            <g>
+                <path d="M315,0H15C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V15	C330,6.716,323.284,0,315,0z M255.606,135.606l-79.998,80c-2.813,2.813-6.628,4.394-10.606,4.394c-3.979,0-7.793-1.58-10.607-4.394	l-80.002-80c-5.858-5.857-5.858-15.355,0-21.213c5.857-5.858,15.355-5.858,21.213,0l69.396,69.393l69.392-69.393	c5.857-5.858,15.355-5.858,21.213,0C261.465,120.251,261.465,129.749,255.606,135.606z"
+                      fill="currentColor"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 330 330" id="icon-left">
+            <g>
+                <path id="XMLID_18_"
+                      d="M315,0H15C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V15        C330,6.716,323.284,0,315,0z M215.606,234.394c5.858,5.857,5.858,15.355,0,21.213C212.678,258.535,208.839,260,205,260        s-7.678-1.464-10.606-4.394l-80-79.998c-2.813-2.813-4.394-6.628-4.394-10.606c0-3.978,1.58-7.794,4.394-10.607l80-80.002        c5.857-5.858,15.355-5.858,21.213,0c5.858,5.857,5.858,15.355,0,21.213l-69.393,69.396L215.606,234.394z"
+                      fill="currentColor"/>
+            </g>
+        </symbol>
+
+    </svg>
+</head>
+<body>
+<img class="maket maket__pos" src="images/ZRENDA_FULL.jpg" alt="">
+
+<!--    1    -->
+<header class="header header--bg">
+    <div class="header__line"></div>
+    <div class="header__warp row">
+        <div class="col-6 pl-0 header__col-6">
+            <div class="header__logo">
+                <img src="images/zrenda_logo.png" alt="">
+                <div class="header__logo-text header__logo-text--indent">УСЛУГИ СТРОИТЕЛЬНОЙ <br>ТЕХНИКИ</div>
+            </div>
+        </div>
+        <div class="col-6 header__address header__address--pr-0">г. Екатеринбург, ул.Маяковского, 25 <br>
+            +7 (343) 222-20-17
+        </div>
+    </div>
+</header>
+
+<!--    2    -->
+<div class="top-nav top-nav--height">
+    <div class="top-nav__warp">
+        <div class="top-nav__icon">
+            <img src="images/icon.png" alt="">
+        </div>
+        <div class="top-nav__links top-nav__links--indent">
+            <a href="#" class="top-nav__item">КАТАЛОГ ТЕХНИКИ</a>
+            <a href="#" class="top-nav__item">УСЛУГИ</a>
+            <a href="#" class="top-nav__item">ВЫПОЛНЕННЫЕ РАБОТЫ</a>
+            <a href="#" class="top-nav__item">О КОМПАНИИ</a>
+            <a href="#" class="top-nav__item">КОНТАКТЫ</a>
+        </div>
+    </div>
+</div>
+
+<!--    3    -->
+<div class="main-sect main-sect--bg">
+    <div class="main-sect__warp main-sect__warp--relative">
+        <div class="main-sect__block main-sect__block--indent">
+            <div class="main-sect__text">ПРОФЕССИОНАЛЬНАЯ  ТЕХНИКА<br>
+                в аренду   от</div>
+            <div class="main-sect__price">15000<span class="main-sect__comment"><br>руб./сутки</span></div>
+            <div class="main-sect__rectangles">
+                <div class="main-sect__rectangle main-sect__rectangle--active"></div>
+                <div class="main-sect__rectangle"></div>
+                <div class="main-sect__rectangle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-sect__moves">
+        <div class="main-sect__left">
+            <svg class="svg">
+                <use xlink:href="#icon-left"></use>
+            </svg>
+        </div>
+        <div class="main-sect__right">
+            <svg class="svg">
+                <use xlink:href="#icon-right"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!--    4    -->
+<div class="product">
+    <div class="product__warp">
+        <div class="product__bar product__bar--size product__bar--indent">
+            <span class="product__span">Главная</span> /
+            <span class="product__span">Каталог</span> /
+            <span class="product__span product__span--avtive">Название товара</span>
+        </div>
+        <div class="product__section product__section--indent">
+            <div class="product__picture">
+                <img src="../images/JCB-01.jpg" alt="">
+            </div>
+            <div class="product__content product__content--indent">
+                <div class="product__title product__title--indent">JCB 4CX Super</div>
+                <div class="product__part product__part--active">
+                    Характеристики
+                    <div class="product__arrow">
+                        <svg class="svg">
+                            <use xlink:href="#icon-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product__radiobox product__radiobox--indent">
+                    <label class="zrenda-radiobox zrenda-radiobox--indent">
+                        <input class="zrenda-radiobox__input" hidden checked type="radio" name="choose">
+                        <div class="zrenda-radiobox__radioed"></div>
+                        <div class="zrenda-radiobox__text zrenda-radiobox__text--margin-left">Характеристика 1</div>
+                    </label>
+                    <label class="zrenda-radiobox zrenda-radiobox--indent">
+                        <input class="zrenda-radiobox__input" hidden type="radio" name="choose">
+                        <div class="zrenda-radiobox__radioed"></div>
+                        <div class="zrenda-radiobox__text zrenda-radiobox__text--margin-left">Характеристика 2</div>
+                    </label>
+                    <label class="zrenda-radiobox zrenda-radiobox--indent">
+                        <input class="zrenda-radiobox__input" hidden type="radio" name="choose">
+                        <div class="zrenda-radiobox__radioed"></div>
+                        <div class="zrenda-radiobox__text zrenda-radiobox__text--margin-left">Характеристика 3</div>
+                    </label>
+                </div>
+                <div class="product__part product__part--indent">
+                    Информация
+                    <div class="product__arrow">
+                        <svg class="svg">
+                            <use xlink:href="#icon-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product__block product__block--indent">
+                    <div class="product__price">125.000 Р.</div>
+                    <div class="product__btn product__btn--indent">Заказать</div>
+                </div>
+            </div>
+        </div>
+        <div class="product__line"></div>
+    </div>
+</div>
+
+
+<!--    5    -->
+<div class="service">
+    <div class="service__title service__title--bg service__title--indent">Услуги</div>
+
+    <div class="service--block service--block--bg">
+        <div class="service__warp">
+            <div class="service__items">
+                <div class="service__item service__item--indent">
+                    <div class="service__picture">
+                        <img src="images/helmet.png" alt="">
+                    </div>
+                    <div class="service__content service__content--indent">
+                        <div class="service__name service__name--indent">Засыпка траншей</div>
+                        <div class="service__text">Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная предприятиями и частными лицами.</div>
+                    </div>
+                </div>
+                <div class="service__item service__item--indent">
+                    <div class="service__picture">
+                        <img src="images/helmet.png" alt="">
+                    </div>
+                    <div class="service__content service__content--indent">
+                        <div class="service__name service__name--indent">Вывоз мусора</div>
+                        <div class="service__text">Вывоз мусора — составляющая деятельности производств и бытовых предприятий</div>
+                    </div>
+                </div>
+                <div class="service__item service__item--indent">
+                    <div class="service__picture">
+                        <img src="images/helmet.png" alt="">
+                    </div>
+                    <div class="service__content service__content--indent">
+                        <div class="service__name service__name--indent">Доставка</div>
+                        <div class="service__text">Отсев образуется после разработки твердых горных пород и является востребованным материалом в строительстве.</div>
+                    </div>
+                </div>
+                <div class="service__item service__item--indent">
+                    <div class="service__picture">
+                        <img src="images/helmet.png" alt="">
+                    </div>
+                    <div class="service__content service__content--indent">
+                        <div class="service__name service__name--indent">Подъем грузов</div>
+                        <div class="service__text">Выполнение широкого спектра высотных операций сложно представить без специализированной техники.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--    6    -->
+<div class="note note--indent">
+    <div class="note__warp">
+        <div class="note__title note__title--indent">ЗАГОЛОВОК</div>
+        <ol class="note__list note__list--indent">
+            <li class="note__item note__item--indent"> Задача 1
+                <img class="note__icon note__icon--indent" src="http://www.placehold.it/10" alt="">
+                <img class="note__icon note__icon--indent" src="http://www.placehold.it/10" alt="">
+            </li>
+            <li class="note__item note__item--indent"> Задача 2
+                <img class="note__icon note__icon--indent" src="http://www.placehold.it/10" alt="">
+                <img class="note__icon note__icon--indent" src="http://www.placehold.it/10" alt="">
+            </li>
+        </ol>
+        <label class="note__input-form">
+            <input class="note__input" type="text">
+            <img class="note__icon note__icon--indent" src="http://www.placehold.it/10" alt="">
+            <img class="note__icon note__icon--indent" src="http://www.placehold.it/10" alt="">
+        </label>
+    </div>
+</div>
+
+<!--    7    -->
+<div class="g-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1224.3697169799643!2d60.61299335712451!3d56.85316541513866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e7978274b11%3A0xd5c9b57e506a655d!2z0KHQuNCx0LjRgNGP0Lo!5e0!3m2!1sru!2sua!4v1584976419737!5m2!1sru!2sua" width="100%" height="98.5%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<!--    8    -->
+<footer class="footer footer--bg">
+    <div class="footer__warp">
+        <div class="footer__content">
+            <div class="footer__logo footer__logo--quarter">
+                <img src="images/zrenda_logo-footer.png" alt="">
+            </div>
+            <div class="footer__nav footer__nav--half">Главная          Каталог  техники          Услуги<br>
+                Выполненные работы         О компании         Контакты         </div>
+            <div class="footer__copyright footer__copyright--flex footer__copyright--quadro">
+                <div class="footer__year">©2020</div>
+                <img src="http://www.placehold.it/25" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

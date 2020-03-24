@@ -1,0 +1,38 @@
+.footer {
+  &__warp {
+    @extend .warps;
+  }
+  &__content {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+
+    &--quarter {
+      width: 25%;
+    }
+  }
+  &__nav {
+    color: $nav;
+    &--half {
+      width: 50%;
+    }
+  }
+  &__copyright {
+    color: $nav;
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &--quadro {
+      width: 20%;
+    }
+  }
+  &--bg {
+    background-color: $black;
+  }
+}

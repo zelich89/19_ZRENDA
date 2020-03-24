@@ -1,0 +1,78 @@
+.main-sect {
+  position: relative;
+  &__warp {
+    @extend .warps;
+    &--relative {
+      position: relative;
+    }
+  }
+  &__block {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 485px;
+    height: 120px;
+    //background-color: rgba(navy,.05);
+    &--indent {
+      padding-top: 6px;
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    @include font(bold, 14px, 24px);
+  }
+  &__price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -20%);
+    color: $white;
+    @include font(bold, 60px, 20px);
+    text-align: end;
+  }
+  &__comment {
+    @include font(bold, 24px, 1px);
+    color: $black;
+  }
+  &__rectangles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    //width: $rectangle-size;
+    height: $rectangle-size*5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__rectangle {
+    width: $rectangle-size;
+    height: $rectangle-size;
+    background-color: $black;
+    &--active {
+      background-color: $white;
+    }
+  }
+  &__moves {
+    position: absolute;
+    @include square-size($square-size*2);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-40%);
+  }
+  &__left {
+    .svg {
+      @include square-size($square-size);
+    }
+  }
+  &__right {
+    float: right;
+    .svg {
+      @include square-size($square-size);
+    }
+  }
+  &--bg {
+    //background-image: url("images/main-pic.jpg");
+    background: url(../images/main-pic.jpg) no-repeat top center/cover;
+    height: 550px;
+  }
+}
