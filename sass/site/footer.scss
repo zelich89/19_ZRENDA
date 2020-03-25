@@ -16,19 +16,38 @@
   }
   &__nav {
     color: $nav;
-    &--half {
-      width: 50%;
+    &--forty {
+      width: 42%;
+    }
+  }
+  &__link {
+    color: $nav;
+    @include font(normal, 14px, 30px);
+    padding: 5px 30px 6px 0;
+    transition: color ease $transition-time;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    &.active {
+      color: $white;
+      &:before {
+        content: '>';
+        padding-right: 5px;
+        color: $primary;
+      }
     }
   }
   &__copyright {
     color: $nav;
+    @include font(normal, 14px, 18px);
 
     &--flex {
       height: 110px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: space-evenly;
+      align-items: flex-end;
     }
     &--quadro {
       width: 20%;
@@ -41,6 +60,10 @@
   &__text {
     @include font(normal, 14px, 1);
     text-decoration: underline;
+    color: $nav;
+    &:hover {
+      color: $nav;
+    }
     &--indent {
       padding-left: 15px;
     }

@@ -45,10 +45,11 @@
     justify-content: space-between;
   }
   &__rectangle {
+    //cursor: pointer;
     width: $rectangle-size;
     height: $rectangle-size;
     background-color: $black;
-    &--active {
+    &.active {
       background-color: $white;
     }
   }
@@ -60,11 +61,13 @@
     transform: translateX(-40%);
   }
   &__left {
+    cursor: pointer;
     .svg {
       @include square-size($square-size);
     }
   }
   &__right {
+    cursor: pointer;
     float: right;
     .svg {
       @include square-size($square-size);

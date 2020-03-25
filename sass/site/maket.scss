@@ -5,7 +5,7 @@
     @if $maket-visible == 1 {
       display: block;
     }
-    opacity: .3;
+    opacity: $maket-opacity;
     z-index: 11;
     pointer-events: none;
   }
