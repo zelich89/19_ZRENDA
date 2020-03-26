@@ -2,70 +2,89 @@
   &__warp {
     @extend .warps;
   }
+
   &__title {
     @include font(bold, 24px, 1);
+
     &--indent {
       padding-bottom: 30px;
     }
   }
+
   &__list {
     @include font(bold, 24px, 1);
     counter-reset: myCounter;
+
     &--indent {
       //padding-left: 25px;
       padding-bottom: 3px;
     }
   }
+
   &__item {
     list-style: none;
     display: flex;
+
     .note__svg:first-child {
       margin-left: 45px;
     }
+
     &:before {
       display: inline-block;
       margin-right: 5px;
       counter-increment: myCounter;
-      content:counter(myCounter)". ";
+      content: counter(myCounter) ". ";
     }
+
     &--indent {
       padding-bottom: 26px;
     }
   }
+
   &__icon {
     .svg {
       @include square-size(20px);
-      }
+    }
+
     &--indent {
       margin-left: 40px;
     }
   }
+
   &__input-form {
     display: flex;
     align-items: center;
   }
+
   &__svg {
     @include square-size(20px);
+
     &--indent {
       margin-right: 20px;
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     /*
     margin-left: 100px;
     &:last-child {
       margin-left: 0;
     }*/
   }
+
   &__input {
     width: 57%;
     @include font(normal, 30px, 1);
     border-radius: 4px;
+    border: 1px solid #535353;
+    box-shadow: inset 3px 0 7px rgba(0, 0, 0, 0.35);
     &--indent {
       margin-right: 30px;
     }
   }
+
   &--indent {
     padding-top: 65px;
     padding-bottom: 90px;
