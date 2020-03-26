@@ -17,10 +17,17 @@
     color: $primary;
     padding-right: 2px;
     &.avtive {
+      cursor: default;
       color: $secondary;
+      &:hover {
+        color: $secondary;
+      }
     }
     &--separ {
       color: $secondary;
+    }
+    &:hover {
+      color: $primary;
     }
   }
   &__section {
