@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
           rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="path/to/swiper.min.css">
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+Pj3AQEBDvEBAQ7xAQEO8QEBDvEBAQ7ykpKdYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIB/AAAA/wAAAP8AAAD/AAAA/wAAAP8aGhrlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAr6+vUAAAAP8AAAD/AAAA/xYWFukAAADPGhoazwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP/m5uYZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVlZWqQAAAP8AAAD/dnZ2iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAObm5hkAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1NTbIAAAD/AAAA/wAAAH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/PMM/PzzCDg4N8AAAA/wAAAP8aGhrlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/Ghoa5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/xoaGuUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPgfAAD4HwAA+B8AAPj/AAD4fwAA/H8AAPx/AAD8fwAA/j8AAP4/AAD/HwAA+B8AAPgfAAD//wAA//8AAA=="
           rel="icon" type="image/x-icon"/>
@@ -100,39 +99,48 @@
 </section>
 
 <!--    3    -->
-<section class="main-sect main-sect--bg">
-    <!-- Slider main container -->
-    <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                Slide 1
-                <img src="http://www.placehold.it/50" alt="">
+<section class="gallery-sect">
+    <div class="gallery-sect__warp">
+        <div class="gallery-sect__carusel carusel">
+            <div class="carusel__items">
+                <div class="carusel__item">
+                    <div class="carusel__pic-block">
+                        <img class="carusel__pic" src="images/main-1.png" alt="">
+                    </div>
+                    <div class="carusel__add">
+                        <div class="carusel__text-block">
+                            <div class="carusel__text">ПРОФЕССИОНАЛЬНАЯ ТЕХНИКА<br>
+                                в аренду от
+                            </div>
+                            <div class="carusel__price">15000<span class="carusel__comment"><br>руб./сутки</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                Slide 2
-                <img src="http://www.placehold.it/50" alt="">
+            <div class="carusel__pagination">
+                <div class="carusel__rectangle active"></div>
+                <div class="carusel__rectangle"></div>
+                <div class="carusel__rectangle"></div>
             </div>
-            <div class="swiper-slide">
-                Slide 3
-                <img src="http://www.placehold.it/50" alt="">
+            <div class="carusel__buttons">
+                <div class="carusel__left">
+                    <svg class="svg">
+                        <use xlink:href="#icon-left"></use>
+                    </svg>
+                </div>
+                <div class="carusel__right">
+                    <svg class="svg">
+                        <use xlink:href="#icon-right"></use>
+                    </svg>
+                </div>
             </div>
-            ...
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
+</section>
 
-    <!--<div class="main-sect__warp main-sect__warp&#45;&#45;relative">
-        <div class="main-sect__block main-sect__block&#45;&#45;indent">
+<section class="dn main-sect main-sect--bg">
+    <div class="main-sect__warp main-sect__warp--relative">
+        <div class="main-sect__block main-sect__block--indent">
             <div class="main-sect__text">ПРОФЕССИОНАЛЬНАЯ ТЕХНИКА<br>
                 в аренду от
             </div>
@@ -155,7 +163,7 @@
                 <use xlink:href="#icon-right"></use>
             </svg>
         </div>
-    </div>-->
+    </div>
 </section>
 
 <!--    4    -->
@@ -363,25 +371,6 @@
         </div>
     </div>
 </footer>
-
-<!-- Swiper JS -->
-<script src="js/swiper.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper1 = new Swiper('.sw1', {
-        initialSlide: 1,
-        speed: 2000,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        /*        autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }*/
-    });
-</script>
 
 </body>
 </html>

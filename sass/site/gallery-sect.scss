@@ -1,0 +1,18 @@
+.gallery-sect {
+  background-color: $primary;
+  height: 550px;
+  position: relative;
+  &__warp {
+    @extend .warps;
+  }
+  &__items {
+    position: relative;
+  }
+  &__add {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 485px;
+    height: 120px;
+  }
+}

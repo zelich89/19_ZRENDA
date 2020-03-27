@@ -1,22 +1,22 @@
-.main-sect {
+.carusel {
   position: relative;
-  &__warp {
-    //height: 100px;
-    @extend .warps;
-    &--relative {
-      position: relative;
-    }
-  }
-  &__block {
+
+  &__pagination {
     position: absolute;
     top: 15px;
     right: 0;
-    width: 485px;
-    height: 120px;
-    //background-color: rgba(navy,.05);
-    &--indent {
-      padding-top: 6px;
-    }
+  }
+  &__items {
+    position: relative;
+    top: 25px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__add {
+    position: absolute;
+    top: 0;
+    left: 50%;
   }
   &__text {
     text-transform: uppercase;
@@ -24,9 +24,9 @@
   }
   &__price {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
-    transform: translate(-85%, -20%);
+    //transform: translateY(-85%, -20%);
     color: $white;
     @include font(bold, 60px, 20px);
     text-align: end;
@@ -35,31 +35,25 @@
     @include font(bold, 24px, 1px);
     color: $black;
   }
-  &__rectangles {
-    position: absolute;
-    top: 0;
-    right: 0;
-    //width: $rectangle-size;
-    height: $rectangle-size*5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   &__rectangle {
     //cursor: pointer;
     width: $rectangle-size;
     height: $rectangle-size;
+    margin-bottom: $rectangle-size;
     background-color: $black;
     &.active {
       background-color: $white;
     }
   }
-  &__moves {
+  &__text-block {
+    position: relative;
+  }
+  &__buttons {
     position: absolute;
     @include square-size($square-size*2);
-    bottom: 0;
+    top: 100%;
     left: 50%;
-    transform: translateX(-40%);
+    //transform: translateX(-40%);
   }
   &__left {
     cursor: pointer;
@@ -73,12 +67,5 @@
     .svg {
       @include square-size($square-size);
     }
-  }
-  &--bg {
-//background-image: url("images/main-pic.jpg");
-//background: url(../images/main-pic.jpg) no-repeat top center/cover;
-//    background: url(../images/main-1.png) no-repeat top center;
-    background-color: $primary;
-    height: 550px;
   }
 }
