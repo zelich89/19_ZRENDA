@@ -7,6 +7,13 @@
   &__warp {
     @extend .warps;
   }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col-6 {
+    width: 50%;
+  }
   &__logo {
     height: 93px;
     display: flex;

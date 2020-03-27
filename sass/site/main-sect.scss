@@ -75,7 +75,8 @@
   }
   &--bg {
     //background-image: url("images/main-pic.jpg");
-    background: url(../images/main-pic.jpg) no-repeat top center/cover;
+    //background: url(../images/main-pic.jpg) no-repeat top center/cover;
+    background-color: $primary;
     height: 550px;
   }
 }
