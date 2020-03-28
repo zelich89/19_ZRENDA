@@ -106,6 +106,7 @@
         <div class="swiper-wrapper">
                 <img class="swiper-slide gallery__image" src="images/main-0.png" alt="">
                 <img class="swiper-slide gallery__image" src="images/main-pic.jpg" alt="">
+                <img class="swiper-slide gallery__image" src="images/main-0.png" alt="">
         </div>
         <div class="gallery__add">
             <div class="gallery__warp">
@@ -175,8 +176,8 @@
             </div>
             <div class="product__content product__content--indent">
                 <div class="product__title product__title--indent">JCB 4CX Super</div>
-                <div class="product__part active">
-                    <div class="product__name product__name--indent">
+                <div class="product__part js-part active">
+                    <div class="product__name js-acc product__name--indent">
                         Характеристики
                         <div class="product__arrow">
                             <svg class="svg">
@@ -202,8 +203,8 @@
                         </label>
                     </div>
                 </div>
-                <div class="product__part">
-                    <div class="product__name product__name--indent">
+                <div class="product__part js-part">
+                    <div class="product__name js-acc product__name--indent">
                         Информация
                         <div class="product__arrow">
                             <svg class="svg">
@@ -365,18 +366,35 @@
     </div>
 </footer>
 
+<!-- Add JS -->
+<script src="js/accordion.js"></script>
+
 <!-- Swiper JS -->
-<script src="js/swiper.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
     var swiper1 = new Swiper('.swiper-container', {
-        initialSlide: 1,
-        speed: 2000,
+        initialSlide: 0,
+        loop: true,
+        speed: 500,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            bulletClass: 'gallery__rectangle',
+            bulletActiveClass: 'active',
+            bulletElement: 'div',
+            clickable:  true,
+
+        },
+        // Navigation arrows
         navigation: {
             prevEl: '.gallery__left',
             nextEl: '.gallery__right',
         },
+
         /*        autoplay: {
                     delay: 5000,
                     disableOnInteraction: false,

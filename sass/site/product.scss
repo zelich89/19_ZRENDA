@@ -10,6 +10,7 @@
     }
     &--indent {
       padding-top: 45px;
+      padding-bottom: 65px;
     }
   }
   &__show {
@@ -35,7 +36,8 @@
   &__section {
     display: flex;
     &--indent {
-      padding-top: 65px;
+      //padding-top: 65px;
+      padding-bottom: 45px;
     }
     &--border {
       border-bottom: 2px solid rgba($nav, .5);
@@ -89,6 +91,7 @@
     right: 20px;
     transform: translateY(-50%);
     display: flex;
+    cursor: pointer;
     .svg {
       @include square-size(20px);
     }
@@ -104,7 +107,7 @@
     align-items: center;
     &--indent {
       margin-top: 20px;
-      margin-bottom: 42px;
+      //margin-bottom: 42px;
     }
   }
   &__price {
