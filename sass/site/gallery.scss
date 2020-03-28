@@ -1,0 +1,41 @@
+.gallery {
+  position: relative;
+  &__warp {
+    @extend .warps;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+  &__add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__pagination {
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    right: 15px;
+  }
+  &__buttons {
+    position: absolute;
+    @include square-size($square-size*2);
+    bottom: 0;
+    left: 50%;
+  }
+  &__left {
+    cursor: pointer;
+    .svg {
+      @include square-size($square-size);
+    }
+  }
+  &__right {
+    cursor: pointer;
+    float: right;
+    .svg {
+      @include square-size($square-size);
+    }
+  }
+}
