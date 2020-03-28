@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext"
           rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+Pj3AQEBDvEBAQ7xAQEO8QEBDvEBAQ7ykpKdYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIB/AAAA/wAAAP8AAAD/AAAA/wAAAP8aGhrlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAr6+vUAAAAP8AAAD/AAAA/xYWFukAAADPGhoazwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP/m5uYZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVlZWqQAAAP8AAAD/dnZ2iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAObm5hkAAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1NTbIAAAD/AAAA/wAAAH8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/PMM/PzzCDg4N8AAAA/wAAAP8aGhrlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/Ghoa5QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/xoaGuUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPgfAAD4HwAA+B8AAPj/AAD4fwAA/H8AAPx/AAD8fwAA/j8AAP4/AAD/HwAA+B8AAPgfAAD//wAA//8AAA=="
           rel="icon" type="image/x-icon"/>
@@ -101,31 +102,66 @@
 <!--    3    -->
 
 <section class="gallery">
-    <div class="gallery__item">
-        <img class="gallery__image" src="images/main-0.png" alt="">
-    </div>
-    <div class="gallery__add">
-        <div class="gallery__warp">
-            <div class="gallery__pagination carusel__pagination">
-                <div class="carusel__rectangle active"></div>
-                <div class="carusel__rectangle"></div>
-                <div class="carusel__rectangle"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="gallery__item swiper-slide">
+                <img class="gallery__image" src="images/main-0.png" alt="">
             </div>
-            <div class="gallery__buttons">
-                <div class="gallery__left">
-                    <svg class="svg">
-                        <use xlink:href="#icon-left"></use>
-                    </svg>
+            <div class="gallery__item swiper-slide">
+                <img class="gallery__image" src="images/main-pic.jpg" alt="">
+            </div>
+        </div>
+        <div class="gallery__add">
+            <div class="gallery__warp">
+                <div class="gallery__pagination carusel__pagination swiper-pagination">
+                    <div class="carusel__rectangle active"></div>
+                    <div class="carusel__rectangle"></div>
+                    <div class="carusel__rectangle"></div>
                 </div>
-                <div class="gallery__right">
-                    <svg class="svg">
-                        <use xlink:href="#icon-right"></use>
-                    </svg>
+                <div class="gallery__buttons ">
+                    <div class="gallery__left">
+                        <svg class="svg">
+                            <use xlink:href="#icon-left"></use>
+                        </svg>
+                    </div>
+                    <div class="gallery__right">
+                        <svg class="svg">
+                            <use xlink:href="#icon-right"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!--
+ Slider main container
+<div class="swiper-container">
+    &lt;!&ndash; Additional required wrapper &ndash;&gt;
+    <div class="swiper-wrapper">
+        &lt;!&ndash; Slides &ndash;&gt;
+        <div class="swiper-slide">
+            Slide 1
+            <img src="http://www.placehold.it/50" alt="">
+        </div>
+        <div class="swiper-slide">
+            Slide 2
+            <img src="http://www.placehold.it/50" alt="">
+        </div>
+        <div class="swiper-slide">
+            Slide 3
+            <img src="http://www.placehold.it/50" alt="">
+        </div>
+        ...
+    </div>
+    &lt;!&ndash; If we need pagination &ndash;&gt;
+    <div class="swiper-pagination"></div>
+
+    &lt;!&ndash; If we need navigation buttons &ndash;&gt;
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+</div>-->
 
 <section class="dn gallery-sect">
     <div class="gallery-sect__warp">
@@ -165,7 +201,6 @@
         </div>
     </div>
 </section>
-
 <section class="dn main-sect main-sect--bg">
     <div class="main-sect__warp main-sect__warp--relative">
         <div class="main-sect__block main-sect__block--indent">
@@ -399,6 +434,25 @@
         </div>
     </div>
 </footer>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper1 = new Swiper('.swiper-container', {
+        initialSlide: 1,
+        speed: 2000,
+        navigation: {
+            prevEl: '.gallery__left',
+            nextEl: '.gallery__right',
+        },
+        /*        autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }*/
+    });
+</script>
 
 </body>
 </html>
