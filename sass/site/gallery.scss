@@ -19,6 +19,17 @@
     width: 15px;
     right: 15px;
   }
+  &__rectangle {
+    cursor: pointer;
+    width: $rectangle-size;
+    height: $rectangle-size;
+    margin-bottom: $rectangle-size;
+    background-color: $black;
+
+    &.active {
+      background-color: $white;
+    }
+  }
   &__buttons {
     position: absolute;
     @include square-size($square-size*2);
