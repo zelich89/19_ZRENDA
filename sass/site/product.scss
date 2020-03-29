@@ -66,23 +66,20 @@
         box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 1);
       }
       .product__radiobox {
-        display: block;
+        //display: block;
+        height: 120px;
       }
     }
   }
   &__name {
     position: relative;
-    border: 1px solid red;
+    border: 1px solid rgba($black, .2);
     padding: 5px 20px;
     @include font(bold, 24px, 1);
     border-radius: 3px;
-    border-color: rgba($black, .2);
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .35);
     &--indent {
       margin-bottom: 5px;
-      &:last-child {
-        margin-bottom: 20px;
-      }
     }
   }
   &__arrow {
@@ -97,7 +94,10 @@
     }
   }
   &__radiobox {
-    display: none;
+    //display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height $transition-time ease;
     &--indent {
       margin: 32px 0
     }
