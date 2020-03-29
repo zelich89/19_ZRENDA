@@ -65,9 +65,12 @@
       .product__name {
         box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 1);
       }
-      .product__radiobox {
+      .product__checkbox {
         //display: block;
-        height: 120px;
+        height: 180px;
+        &--indent {
+          padding: 30px 0;
+        }
       }
     }
   }
@@ -78,6 +81,7 @@
     @include font(bold, 24px, 1);
     border-radius: 3px;
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .35);
+    transition: box-shadow $transition-time*2 ease;
     &--indent {
       margin-bottom: 5px;
     }
@@ -93,13 +97,14 @@
       @include square-size(20px);
     }
   }
-  &__radiobox {
+  &__checkbox {
     //display: none;
     height: 0;
     overflow: hidden;
-    transition: height $transition-time ease;
+    transition: all $transition-time*2 ease;
     &--indent {
-      margin: 32px 0
+      //margin: 32px 0;
+      //padding-top: 32px;
     }
   }
   &__block {

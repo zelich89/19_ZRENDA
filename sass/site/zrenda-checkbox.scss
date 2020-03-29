@@ -1,4 +1,4 @@
-.zrenda-radiobox {
+.zrenda-checkbox {
   display: flex;
   align-items: center;
   user-select: none;
@@ -18,7 +18,7 @@
       transition: all $transition-time ease;
     }
   }
-  &__input:checked ~ .zrenda-radiobox__radioed {
+  &__input:checked ~ .zrenda-checkbox__radioed {
     &:after {
       transform: scale(1);
     }
